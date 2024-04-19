@@ -9,6 +9,7 @@ async function storeTask(request, response) {
     const query = "INSERT INTO notificacao_ofertas(nome,email) VALUE(?,?)";
 
     connection.query(query, params, (err, results) =>{
+        console.log(err)
         if (results) {
             response
                 .status(201)

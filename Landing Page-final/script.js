@@ -35,7 +35,8 @@ let button = document.getElementById("handleSubmit");
 
 button.onclick = async function(e) {
     e.preventDefault();
-    let nome       = document.getElementById("nome").value;
+
+    let nome  = document.getElementById("nome").value;
     let email = document.getElementById("email").value;
     let data        = {nome,email}
 
